@@ -1,0 +1,10 @@
+<!--REVIEWS FORM-->
+<div class="container">
+<app-reviews-form (save)="confirm($event)"  (reset)="reset($event)" ></app-reviews-form>
+
+<!--REVIEWS LIST-->
+<div class="rev-list">
+  <h3>Recensioni</h3>
+</div>
+<app-reviews-list [reviews]="reviews"></app-reviews-list>
+</div>

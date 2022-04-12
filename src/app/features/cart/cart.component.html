@@ -1,0 +1,42 @@
+<div class="container wrapper">
+  <div class="row">
+    <div class="cart col-6">
+      <h1>Carrello</h1>
+      <mat-icon aria-hidden="false" class="cart-icon">shopping_cart</mat-icon>
+            <p class='cart-n' *ngIf="cartServ.items.length">{{cartServ.items.length}}</p>
+    </div>
+    <div class="cart-button col">
+      <button [disabled]="(cartServ.items).length == 0" (click)="sendCart()" mat-raised-button color="primary">
+        <span >Invia ordine</span>
+        <mat-icon class="material-icon cart-icon">
+          shopping_cart_checkout
+        </mat-icon>
+      </button>
+    </div>
+  </div>
+  <mat-card class="main-card">
+    <ng-container *ngIf="(cartServ.items).length == 0">
+      <h2 class="empty-cart">Il carrello è vuoto</h2>
+      <div class="empty-cart">
+        <img class="luffy-gif" src="../assets/img/luffy-gif.gif">
+      </div>
+    </ng-container>
+
+    <div  *ngFor="let item of cartServ.items">
+      <div class="cart-content">
+        <img class="img" [src]="item.menu.img">
+        <div class="col-md">
+        <h5>{{item.menu.name}}</h5>
+        </div>
+        <div class="col-md">
+          <h5>{{item.menu.price}} €</h5>
+        </div>
+        <mat-icon (click)="removeToCart(item)" class="material-icon-delete">
+          close
+        </mat-icon>
+      </div>
+      <mat-divider inset></mat-divider>
+    </div>
+  </mat-card>
+
+</div>

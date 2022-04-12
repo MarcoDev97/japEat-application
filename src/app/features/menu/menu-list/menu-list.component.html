@@ -1,0 +1,28 @@
+<mat-card class="main-card" *ngFor="let el of menu">
+  <mat-card-title>{{el.label}}</mat-card-title>
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col" *ngFor="let cont of el.content">
+          <mat-card class="card">
+            <mat-card-header class="header-card">
+              <mat-card-title>
+                <img class="img" [src]="cont.img">
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <mat-card-title>{{cont.name}}</mat-card-title>
+              <mat-card-subtitle> {{cont.price}} Euro</mat-card-subtitle>
+            </mat-card-content>
+            <mat-divider inset></mat-divider>
+            <mat-card-actions>
+              <button class="add-button" mat-raised-button color="success" (click)="addToCart.emit(cont)">
+                <mat-icon aria-hidden="false">add</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

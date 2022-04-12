@@ -1,0 +1,27 @@
+<div *ngIf="reviews" class="form-list">
+  <div class="row">
+    <p>Recensioni Totali: {{reviews.length}} </p>
+    <hr>
+  </div>
+  <div class="list" *ngFor="let rev of reviews">
+    <div class="row">
+      <div class="col-11">
+        <span class="title">Nome: </span> {{rev.name}}
+      </div>
+      <div  class="col-1">
+        <div class="votes" *ngIf="rev.vote === true; else dislike">
+          <i  class="fa fa-thumbs-up like fa-2x"></i>
+        </div>
+        <ng-template #dislike>
+           <i  class="votes fa fa-thumbs-down dislike fa-2x"></i>
+        </ng-template>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span class="title">Recensioni: </span> {{rev.description}}
+      </div>
+    </div>
+  </div>
+</div>

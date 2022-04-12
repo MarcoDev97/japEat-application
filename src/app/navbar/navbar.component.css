@@ -1,0 +1,10 @@
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logout{
+  cursor: pointer;
+  margin-right: 10px;
+}

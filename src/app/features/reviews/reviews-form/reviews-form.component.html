@@ -1,0 +1,30 @@
+<form #serviceForm="ngForm" (submit)="confirmHandler(serviceForm)">
+  <div class="card-container">
+    <h3>Scrivi qui la tua recensione:</h3>
+    <div class="form-group">
+      <label>Inserisci il tuo nome</label>
+      <input style="width:35%" [ngModel] name="name" required class="form-control" placeholder="Inserisci nome">
+    </div>
+    <div style="display: flex; justify-content: flex-start;">
+      <div class="row">
+        <div class="col-6">
+          <input [ngModel] required type="radio" id=like [value]=true name="vote">
+          <i [ngModel] type="button" type="checkbox" style="margin: 5px 10px 5px 15px;"
+            class="fa fa-thumbs-up like fa-2x"></i>
+        </div>
+        <div class="col-6">
+          <input [ngModel] type="radio" id=dislike [value]=false name="vote">
+          <i [ngModel] type="button" type="checkbox" style="margin: 5px 10px 5px 15px;"
+            class="fa fa-thumbs-down dislike fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Descrivi la tua esperienza:</label>
+      <textarea [ngModel] name="description" class="form-control" required rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="serviceForm.invalid">Conferma</button>
+    <button type="button" class="btn btn-danger" (click)="resetHandler(serviceForm)">Cancella</button>
+  </div>
+
+</form>

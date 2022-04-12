@@ -1,0 +1,171 @@
+{
+  "login": {
+    "name": "Marco",
+    "token": "12345"
+  },
+  "menu": [
+    {
+      "id": 1,
+      "label": "Bevande",
+      "content": [
+        {
+          "name": "Acqua Liscia",
+          "img": "../assets/img/menu/acqua.jpeg",
+          "price": 2
+        },
+        {
+          "name": "Acqua Frizzante",
+          "img": "../assets/img/menu/acquaF.jpeg",
+          "price": 2
+        },
+        {
+          "name": "Coca Cola",
+          "img": "../assets/img/menu/coca.jpeg",
+          "price": 3
+        },
+        {
+          "name": "Fanta",
+          "img": "../assets/img/menu/fanta.jpg",
+          "price": 2
+        },
+        {
+          "name": "Pepsi",
+          "img": "../assets/img/menu/pepsi.jpeg",
+          "price": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Sashimi",
+      "content": [
+        {
+          "name": "Salmone",
+          "img": "../assets/img/menu/sashimi.jpeg",
+          "price": 15
+        },
+        {
+          "name": "Tonno",
+          "img": "../assets/img/menu/sashimi-tonno.jpeg",
+          "price": 10
+        },
+        {
+          "name": "Spigola",
+          "img": "../assets/img/menu/sashimi-bianco.jpeg",
+          "price": 9
+        },
+        {
+          "name": "Polpo",
+          "img": "../assets/img/menu/sashimi-polpo.png",
+          "price": 8
+        },
+        {
+          "name": "Misto",
+          "img": "../assets/img/menu/sashimi-a.jpeg",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Sushi",
+      "content": [
+        {
+          "name": "Nigiri salmone",
+          "img": "../assets/img/menu/nigiri.jpeg",
+          "price": 6
+        },
+        {
+          "name": "Hosomaki",
+          "img": "../assets/img/menu/hosomaki.jpeg",
+          "price": 9
+        },
+        {
+          "name": "Onigiri",
+          "img": "../assets/img/menu/onigiri.jpeg",
+          "price": 4
+        },
+        {
+          "name": "Uramaki",
+          "img": "../assets/img/menu/uramaki.jpeg",
+          "price": 8
+        },
+        {
+          "name": "Gunkan",
+          "img": "../assets/img/menu/gunkan.jpeg",
+          "price": 8
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fritti",
+      "content": [
+        {
+          "name": "Ebi Tempura",
+          "img": "../assets/img/menu/tempura.jpeg",
+          "price": 7
+        },
+        {
+          "name": "Patatine fritte",
+          "img": "../assets/img/menu/patatine-fritte.jpeg",
+          "price": 6
+        },
+        {
+          "name": "Pollo fritto",
+          "img": "../assets/img/menu/pollo.jpeg",
+          "price": 6
+        },
+        {
+          "name": "Ebi Stick",
+          "img": "../assets/img/menu/ebi-stick.png",
+          "price": 5
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Sabrina",
+      "vote": true,
+      "description": "Un'esperienza straordinaria. Qualità del cibo ottima. Il servizio è veloce. Il locale è elegante e pulito. Consiglio di prenotare perché è sempre pieno, ne vale assolutamente la pena."
+    },
+    {
+      "id": 2,
+      "name": "Carlo",
+      "vote": false,
+      "description": "Non mi piace"
+    },
+    {
+      "id": 3,
+      "name": "Paolo",
+      "vote": true,
+      "description": "Buonissimo, ci tornerò"
+    },
+    {
+      "name": "Carolina",
+      "vote": true,
+      "description": "Esperienza ottima. Grande qualità nei piatti e stupenda la presentazione. Rapporto qualità-prezzo ottimale. Camerieri molto gentili, educati e simpatici",
+      "id": 4
+    },
+    {
+      "name": "Claudio",
+      "vote": true,
+      "description": "Mazza che bono",
+      "id": 5
+    },
+    {
+      "name": "s",
+      "vote": true,
+      "description": "s",
+      "id": 6
+    },
+    {
+      "name": "wewe",
+      "vote": false,
+      "description": "ww",
+      "id": 7
+    }
+  ]
+}

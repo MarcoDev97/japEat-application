@@ -1,0 +1,9 @@
+.menu{
+  max-width: 450px;
+}
+
+.menu-content{
+  display: flex;
+  justify-content: flex-start;
+
+}

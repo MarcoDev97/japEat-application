@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="me-3">JapEat</span>
+    <button mat-button routerLink="home" routerLinkActive="active">
+      Home
+    </button>
+    <button mat-button routerLink="menu" routerLinkActive="active">
+      Menu
+    </button>
+    <button mat-button routerLink="cart" routerLinkActive="active">
+      Carrello({{cart.items.length}})
+    </button>
+    <button mat-button routerLink="reviews" routerLinkActive="active">
+      Recensioni
+    </button>
+    <span class="example-spacer"></span>
+    <mat-icon  class="logout" aria-hidden="false" (click)="auth.logout()"  routerLinkActive="active">logout
+    </mat-icon>
+
+  </mat-toolbar-row>

@@ -1,0 +1,28 @@
+.img{
+  width: 120px;
+  height: 120px;
+}
+.card {
+  max-width: 400px;
+  margin: 15px 0 0 0;
+}
+
+.header-card{
+  display: flex;
+  justify-content: center;
+}
+.main-card{
+  margin: 15px 0 0 0;
+}
+
+.add-button{
+  width: 100%;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #4CAF50;;
+}
