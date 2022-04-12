@@ -35,7 +35,7 @@ export class AuthService {
 
   isLogged() {
     const isAuth = this.data && this.data.token ? true : false;
-   // return isAuth;
-    return true;
+    return isAuth;
+
   }
 }

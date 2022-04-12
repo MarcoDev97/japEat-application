@@ -148,24 +148,6 @@
       "vote": true,
       "description": "Esperienza ottima. Grande qualità nei piatti e stupenda la presentazione. Rapporto qualità-prezzo ottimale. Camerieri molto gentili, educati e simpatici",
       "id": 4
-    },
-    {
-      "name": "Claudio",
-      "vote": true,
-      "description": "Mazza che bono",
-      "id": 5
-    },
-    {
-      "name": "s",
-      "vote": true,
-      "description": "s",
-      "id": 6
-    },
-    {
-      "name": "wewe",
-      "vote": false,
-      "description": "ww",
-      "id": 7
     }
   ]
 }
