@@ -8,11 +8,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MenuListComponent {
 
-  @Input() menu: Menu[] = [];
+  @Input() menu: Menu[];
   @Input() active: Menu;
   @Output() addToCart: EventEmitter<Content> = new EventEmitter<Content>();
 
 
+  addToCartItem(cont: Content){
+    this.addToCart.emit(cont);
+  }
 
 
 

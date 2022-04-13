@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
     private service: japEatService,
     private cartServ: CartService) {}
 
-  menu: Menu[];
+  menuList: Menu[];
   active: Menu;
   init: string = 'Tutti'
 
@@ -23,14 +23,13 @@ export class MenuComponent implements OnInit {
 
   getMenu() {
     this.service.getAllMenu().subscribe((res) => {
-      this.menu = res;
+      this.menuList = res;
       console.log(res);
     });
   }
 
   addToCart(cont: any, active: Menu) {
     this.cartServ.addToCart(cont,active);
-    console.log('CONT', cont)
   }
 
 

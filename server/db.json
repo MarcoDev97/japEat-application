@@ -148,12 +148,6 @@
       "vote": true,
       "description": "Esperienza ottima. Grande qualità nei piatti e stupenda la presentazione. Rapporto qualità-prezzo ottimale. Camerieri molto gentili, educati e simpatici",
       "id": 4
-    },
-    {
-      "name": "Sonia",
-      "vote": true,
-      "description": "Tutto di qualità",
-      "id": 5
     }
   ]
 }
