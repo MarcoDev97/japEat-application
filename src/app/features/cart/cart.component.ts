@@ -24,10 +24,8 @@ export class CartComponent implements OnInit {
 
   sendCart(){
     this.cartServ.items = [];
-    this.dialog.open(MatDialogComponent,{
+    this.dialog.open(MatDialogComponent);
 
-    });
-    //this.dialog.open(SendDialogComponent);
   }
 
 }

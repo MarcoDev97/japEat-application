@@ -14,6 +14,9 @@ export class ReviewsFormComponent implements OnInit {
   @Output() save: EventEmitter<any> = new EventEmitter<any>();
   @Output() reset: EventEmitter<any> = new EventEmitter<any>();
 
+  name: string = '';
+  description: string = '';
+
   constructor() { }
   ngOnInit() {
   }

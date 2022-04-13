@@ -14,7 +14,7 @@ export class MatDialogComponent implements OnInit {
   ngOnInit() {
   }
 
-  onNoClick(): void {
+  closeDialog(): void {
     this.dialogRef.close();
   }
 

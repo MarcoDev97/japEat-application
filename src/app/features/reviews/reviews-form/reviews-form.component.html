@@ -3,7 +3,7 @@
     <h3>Scrivi qui la tua recensione:</h3>
     <div class="form-group">
       <label>Inserisci il tuo nome</label>
-      <input style="width:35%" [ngModel] name="name" required class="form-control" placeholder="Inserisci nome">
+      <input style="width:35%" [(ngModel)]="name" name="name" required class="form-control" placeholder="Inserisci nome">
     </div>
     <div style="display: flex; justify-content: flex-start;">
       <div class="row">
@@ -21,7 +21,7 @@
     </div>
     <div class="form-group">
       <label>Descrivi la tua esperienza:</label>
-      <textarea [ngModel] name="description" class="form-control" required rows="3"></textarea>
+      <textarea [(ngModel)]="description" name="description" class="form-control" required rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-success" [disabled]="serviceForm.invalid">Conferma</button>
     <button type="button" class="btn btn-danger" (click)="resetHandler(serviceForm)">Cancella</button>
