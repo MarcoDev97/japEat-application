@@ -1,6 +1,6 @@
 import { CartService } from './../../services/cart.service';
 import { japEatService } from 'src/app/services/japEat.service';
-import { Menu } from './../../models/IjapEat';
+import { Menu, Content } from './../../models/IjapEat';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,13 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  constructor(
-    private service: japEatService,
-    private cartServ: CartService) {}
+  constructor(private service: japEatService, private cartServ: CartService) {}
 
   menuList: Menu[];
   active: Menu;
-  init: string = 'Tutti'
 
   ngOnInit() {
     this.getMenu();
@@ -28,9 +25,14 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  addToCart(cont: any, active: Menu) {
-    this.cartServ.addToCart(cont,active);
+  addToCart(cont: Content) {
+    this.cartServ.addToCart(cont);
   }
 
+  removeCartItem(cont: Content) {
+    const list = this.cartServ.items.map((el) => el.menu.name);
+    const index = list.indexOf(cont.name);
+    this.cartServ.items.splice(index, 1);
+  }
 
 }

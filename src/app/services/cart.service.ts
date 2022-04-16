@@ -1,4 +1,4 @@
-import { Menu } from './../models/IjapEat';
+import { Menu, Content } from './../models/IjapEat';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -10,10 +10,9 @@ export class CartService {
   items: any[] = [];
 
 
-  addToCart(menu: Menu, name: Menu) {
+  addToCart(menu: Content) {
     let cartItems = {
-      menu,
-      name,
+      menu
     };
     this.items.push(cartItems);
   }
