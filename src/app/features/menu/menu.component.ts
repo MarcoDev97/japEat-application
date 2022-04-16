@@ -32,7 +32,10 @@ export class MenuComponent implements OnInit {
   removeCartItem(cont: Content) {
     const list = this.cartServ.items.map((el) => el.menu.name);
     const index = list.indexOf(cont.name);
-    this.cartServ.items.splice(index, 1);
+    if(index !== -1){
+      this.cartServ.items.splice(index, 1);
+    }
+
   }
 
 }

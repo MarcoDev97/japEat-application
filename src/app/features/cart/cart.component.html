@@ -24,7 +24,9 @@
 
     <div  *ngFor="let item of cartServ.items">
       <div class="cart-content">
-        <img class="img" [src]="item.menu.img">
+        <div class="col-md">
+          <img class="img" [src]="item.menu.img">
+        </div>
         <div class="col-md">
         <h5>{{item.menu.name}}</h5>
         </div>
