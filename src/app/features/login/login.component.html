@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="card-container">
-    <div style="display: flex; justify-content: center;" class="title">
+    <div class="title">
       <img class="profile" src="../assets/img/naruto.jpeg">
     </div>
     <div class="content">
@@ -15,7 +15,7 @@
           <input  required type="password" placeholder="password" [(ngModel)]="pass" name="pass"
             class="form-control input" id="password" aria-describedby="pass" placeholder="Password">
         </div>
-        <button style="margin: 30px 0 0 0" [disabled]="f.invalid" class="btn btn-primary" [disabled]="f.value.invalid" type="submit">Log In</button>
+        <button  [disabled]="f.invalid" class="btn btn-primary" [disabled]="f.value.invalid" type="submit">Log In</button>
       </form>
     </div>
   </div>

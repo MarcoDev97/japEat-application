@@ -3,9 +3,9 @@
     <h3>Scrivi qui la tua recensione:</h3>
     <div class="form-group">
       <label>Inserisci il tuo nome</label>
-      <input style="width:35%" [(ngModel)]="name" name="name" required class="form-control" placeholder="Inserisci nome">
+      <input [(ngModel)]="name" name="name" required class="form-control insert-name" placeholder="Inserisci nome">
     </div>
-    <div style="display: flex; justify-content: flex-start;">
+    <div  class="radio-containers">
       <div class="row">
         <div class="col-6">
           <input [ngModel] required type="radio" id=like [value]=true name="vote">

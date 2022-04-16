@@ -1,46 +1,60 @@
-.card-container{
-  height:600px;
+.card-container {
+  height: 600px;
   width: 650px;
   padding: 2rem;
   border: 1px solid gray;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
 
-  .input{
-    width: 400px;
-  }
+.input {
+  width: 400px;
+}
 
-  .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .title{
-    display: flex;
-    justify-content: center;
-  }
-  .content{
+.class {
   display: flex;
   justify-content: center;
-  }
-  .form-group-name{
-    margin: 70px 0 0 0px;
-  }
-  .form-group-pw{
-    margin: 20px 0 0 0px;
-  }
+}
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-.profile{
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group-name {
+  margin: 70px 0 0 0px;
+}
+
+.form-group-pw {
+  margin: 20px 0 0 0px;
+}
+
+.btn-primary {
+  margin: 30px 0 0 0
+}
+
+.profile {
   width: 200px;
   display: flex;
   margin-top: 10px;
   justify-content: center;
   border-radius: 500px;
 }
-@media only screen and (max-width: 767px) {
-  .card { margin-top: 20px; }
-}
 
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-top: 20px;
+  }
+}

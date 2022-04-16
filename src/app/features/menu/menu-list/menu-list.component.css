@@ -15,8 +15,8 @@
   margin: 15px 0 0 0;
 }
 
-.add-button{
-  width: 100%;
+.add-b{
+  margin-left:9px !important
 }
 
 .mat-raised-button.mat-success,
