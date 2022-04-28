@@ -19,16 +19,14 @@ export class japEatService {
   getAllReviews() {
     return this.http.get<Review[]>(this.urlReview);
   }
-
+  //Restituisce tutto il MENU
   getAllMenu() {
     return this.http.get<Menu[]>(this.urlMenu);
   }
 
   // Aggiunge un nuovo elemento tramite la form
   addReview(review: Review) {
-    this.http.post<Review>(this.urlReview, review).subscribe((result) => {
-      this.reviews.unshift(result);
-    });
+    return this.http.post<Review>(this.urlReview, review);
     // form.reset()
   }
 }

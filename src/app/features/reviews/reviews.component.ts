@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Review } from 'src/app/models/IjapEat';
 import { NgForm } from '@angular/forms';
@@ -13,17 +12,17 @@ import { MatSnackbarComponent } from 'src/app/shared/mat-snackbar/mat-snackbar.c
 export class ReviewsComponent implements OnInit {
   constructor(
     private service: japEatService,
-     private http: HttpClient,
-     private _snackBar: MatSnackBar) {}
+    private _snackBar: MatSnackBar
+  ) {}
 
   reviews: Review[] = [];
   durationInSeconds: number = 5;
 
-  urlReview: string = 'http://localhost:3000/reviews';
   ngOnInit() {
     this.getReviews();
   }
 
+  //Ritorna la lista delle recensioni
   getReviews() {
     this.service.getAllReviews().subscribe((result) => {
       if (result) {
@@ -46,11 +45,11 @@ export class ReviewsComponent implements OnInit {
     form.reset();
   }
 
+  //Aggiunge una recensione
   add(review: Review) {
-    this.http.post<Review>(this.urlReview, review).subscribe((result) => {
+    this.service.addReview(review).subscribe((result) => {
       this.reviews.unshift(result);
     });
     // form.reset()
   }
-
 }

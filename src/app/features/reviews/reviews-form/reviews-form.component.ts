@@ -21,7 +21,7 @@ export class ReviewsFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  resetHandler(f:NgForm){
+  resetHandler(f: NgForm){
     this.reset.emit(f);
     f.reset();
   }
